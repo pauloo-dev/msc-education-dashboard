@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Assessments & Grades | MSc Dashboard</title>
+  <link rel="stylesheet" href="styles/main.css" />
+  <script defer src="scripts/script.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-container">
+      <h1>MSc Education Dashboard</h1>
+      <p class="subtext">Course content from University of Glasgow</p>
+    </div>
+  </header>
+
+  <div class="sidebar">
+    <h2>Dashboard</h2>
+    <a href="index.html#home" class="nav-link">🏠 Home</a>
+    <a href="index.html#courses" class="nav-link">📚 Courses</a>
+    <a href="assessments.html" class="nav-link active">📝 Assessments</a>   
+  </div>
+
+  <div class="main">
+    <section class="section" id="assessments">
+      <h2>Assessments & Grades</h2>
+
+      <div class="year-filter">
+        <label for="academicYear">Filter by Academic Year:</label>
+        <select id="academicYear">
+          <option value="all">All Years</option>
+          <option value="2022">2022–23</option>
+          <option value="2024">2024–25</option>
+          <option value="2025">2025–26</option>
+        </select>
+      </div>
+
+      <table class="grades-table">
+        <thead>
+          <tr>
+            <th>Module Title</th>
+            <th>Academic Year</th>
+            <th>Assessment</th>
+            <th>Grade</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- 2022–23 -->
+          <tr data-year="2022" class="completed">
+            <td>Advanced Writing Skills & Presentation</td>
+            <td>2022–23</td>
+            <td>—</td>
+            <td>CP</td>
+            <td>✅ Completed</td>
+          </tr>
+          <tr data-year="2022" class="completed">
+            <td>Modern Educational Thinking</td>
+            <td>2022–23</td>
+            <td>—</td>
+            <td>B1</td>
+            <td>✅ Completed</td>
+          </tr>
+          <tr data-year="2022" class="completed">
+            <td>Education for All</td>
+            <td>2022–23</td>
+            <td><a href="#">📂 View Files</a></td>
+            <td>C2</td>
+            <td>✅ Completed</td>
+          </tr>
+          <tr data-year="2022" class="completed">
+            <td>Education Policy & Politics</td>
+            <td>2022–23</td>
+            <td><a href="#">📂 View Files</a></td>
+            <td>B3</td>
+            <td>✅ Completed</td>
+          </tr>
+
+          <!-- 2024–25 -->
+          <tr data-year="2024" class="in-progress">
+            <td>Working Together (WT)</td>
+            <td>2024–25</td>
+            <td>—</td>
+            <td>—</td>
+            <td>⏳ In Progress</td>
+          </tr>
+          <tr data-year="2024" class="completed">
+            <td>Principles & Practical Research</td>
+            <td>2024–25</td>
+            <td><a href="#">📂 View Files</a></td>
+            <td>A3</td>
+            <td>✅ Completed</td>
+          </tr>
+          <tr data-year="2024" class="completed">
+            <td>Research Application (ODL)</td>
+            <td>2024–25</td>
+            <td><a href="#">📂 View Files</a></td>
+            <td>A1</td>
+            <td>✅ Completed</td>
+          </tr>
+
+          <!-- 2025–26 -->
+          <tr data-year="2025" class="upcoming">
+            <td>Dissertation</td>
+            <td>2025–26</td>
+            <td>—</td>
+            <td>—</td>
+            <td>📅 Upcoming</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </div>
+</body>
+</html>
