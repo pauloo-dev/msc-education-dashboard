@@ -247,18 +247,19 @@ body {
 
 /*===========================================================================*/
 /* Responsive adjustments */
-@media (max-width: 768px) {
+@media (max-width: 770px) {
   /* Header becomes full-width and stacks nicely */
   .site-header {
     position: relative;
     width: 100%;
+    left: 0;
     padding: 1rem 1.5rem;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     text-align: center;
   }
 
   .site-header h1 {
-    font-size: 1.4rem;
+    font-size: 1.1rem;
     margin-bottom: 0.3rem;
   }
 
