@@ -11,6 +11,7 @@ body {
   min-height: 100vh;
   background-color: #f7faff;
   color: #333;
+  margin: 0;
 }
 
 .announcement-banner {
@@ -209,8 +210,10 @@ body {
 
 /* Week Cards (if reused elsewhere) */
 .week-grid {
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
   grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  justify-content: center;
   gap: 1rem;
 }
 
@@ -223,6 +226,8 @@ body {
   text-decoration: none;
   color: #333;
   transition: transform 0.2s;
+  flex: 1 1 150px;
+  max-width: 180px;
 }
 
 .week-card:hover {
@@ -238,4 +243,50 @@ body {
 .week-number {
   font-weight: bold;
   font-size: 0.95rem;
+}
+
+/*===========================================================================
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .sidebar {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+  }
+
+  .main {
+    margin-left: 0;
+    padding: 1rem;
+  }
+
+  .site-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .announcement-box {
+    font-size: 0.9rem;
+    padding: 0.8rem;
+  }
+
+  .course-table th, .course-table td {
+    font-size: 0.9rem;
+    padding: 0.5rem;
+  }
+
+  .week-card {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .week-icon-img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .week-number {
+    font-size: 1rem;
+  }
 }
